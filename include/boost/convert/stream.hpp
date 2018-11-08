@@ -19,7 +19,7 @@
 
 #define BOOST_CNV_PARAM(PARAM_NAME, PARAM_TYPE) \
     this_type&                                  \
-    operator()(boost::parameter::aux::tag<boost::cnv::parameter::type::PARAM_NAME, PARAM_TYPE>::type const& arg)
+    operator()(boost::parameter::aux::tag<boost::cnv::parameter::type::PARAM_NAME, PARAM_TYPE&>::type const& arg)
 
 namespace boost { namespace cnv
 {

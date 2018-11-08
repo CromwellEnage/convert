@@ -27,7 +27,7 @@ namespace boost { namespace cnv
     operator()
 
 #define BOOST_CNV_PARAM(param_name, param_type)                         \
-    derived_type& operator()(boost::parameter::aux::tag<ARG::type::param_name, param_type>::type const& arg)
+    derived_type& operator()(boost::parameter::aux::tag<ARG::type::param_name, param_type&>::type const& arg)
 
 template<typename derived_type>
 struct boost::cnv::cnvbase
